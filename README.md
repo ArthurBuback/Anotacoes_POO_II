@@ -20,7 +20,23 @@ npm install prisma --save-dev
 npx prisma init --datasource-provider sqlite
 
 ## Criação das tabelas
+Preencher com as informações das tabelas, exemplo:
 
+model User {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String?
+  posts Post[]
+}
+
+model Post {
+  id        Int     @id @default(autoincrement())
+  title     String
+  content   String?
+  published Boolean @default(false)
+  author    User    @relation(fields: [authorId], references: [id])
+  authorId  Int
+}
 
 ## Extensões
 - Prisma
