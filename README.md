@@ -20,7 +20,7 @@ npm install prisma --save-dev
 npx prisma init --datasource-provider sqlite
 
 ## Criação das tabelas
-Preencher com as informações das tabelas, exemplo:
+Preencher com as informações das tabelas, exemplo (Olhar dentro do README.md pra entender certinho):
 
 model User {
   id    Int     @id @default(autoincrement())
