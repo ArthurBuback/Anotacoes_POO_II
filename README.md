@@ -1,15 +1,15 @@
 # Anotacoes_POO_II
 
-## Selecionando a pasta no PC da UVV
+## Selecionando a pasta no PC da UVV:
 cd ..
 (Voltar até "C:" e entrar com "cd " até a pasta "DevC"
 
-## Criando a pasta e entrando nela
+## Criando a pasta e entrando nela:
 mkdir nome_da_pasta
 cd nome_da_pasta
 code .
 
-## Criação das configurações necessárias
+## Criação das configurações necessárias:
 npm init -y
 npm install typescript ts-node @types/node --save-dev
 
@@ -44,6 +44,7 @@ npx prisma migrate dev --name init
 
 ## Criar arquivo de informações:
 IMPORTANTE: O "touch nome_do_arquivo.ts" não funciona, então pode-se criar o arquivo manualmente mesmo ou fazer da maneira que a Malu ensinou.
+IMPORTANTE 2: Acredito que criar manualmente não irá servir, pois ainda é necessário conectar as tabelas a esse arquivo (Posso estar errado).
 
 nome_do_arquivo.ts
 
@@ -52,7 +53,7 @@ nome_do_arquivo.ts
 ## Configurar o tsconfig.json
 (Anotar o que alterar (Baseado na antiga atividade))
 
-## Baixar extensões
+## Baixar extensões:
 - Prisma
 - SQL Viewer
 - vscode-icons
