@@ -44,10 +44,38 @@ npx prisma migrate dev --name init
 
 ## Criar arquivo de informações:
 IMPORTANTE: O "touch nome_do_arquivo.ts" não funciona, então pode-se criar o arquivo manualmente mesmo ou fazer da maneira que a Malu ensinou.
-IMPORTANTE 2: Acredito que criar manualmente não irá servir, pois ainda é necessário conectar as tabelas a esse arquivo (Posso estar errado).
 
 nome_do_arquivo.ts
 
+## Preencher com as informações:
+Exemplo:
+
+import { PrismaClient } from '@prisma/client'
+
+const prisma = new PrismaClient()
+
+async function main() {
+  const user = await prisma.user.create({
+    data: {
+      name: 'Alice',
+      email: 'alice@prisma.io',
+    },
+  })
+  console.log(user)
+}
+
+main()
+  .then(async () => {
+    await prisma.$disconnect()
+  })
+  .catch(async (e) => {
+    console.error(e)
+    await prisma.$disconnect()
+    process.exit(1)
+  })
+
+## "Confirmar":
+npx ts-node script.ts
 
 # Coisas importantes:
 ## Configurar o tsconfig.json
