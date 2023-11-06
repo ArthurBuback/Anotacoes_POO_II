@@ -1,2 +1,6 @@
 "npx prisma studio"
 - É uma maneira de visualizar o banco de dados do prisma; checando as tabelas de banco de dados.
+
+
+Ctrl + espaço
+- "Autocomplete" do vscode que é util para ver o que precisamos preencher nas insformações do prisma.
