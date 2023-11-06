@@ -85,3 +85,4 @@ npx ts-node script.ts
 - Prisma
 - SQL Viewer
 - vscode-icons
+- dotenv (Muito pocional)
