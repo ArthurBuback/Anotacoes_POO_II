@@ -19,6 +19,7 @@ Coisas que o Otavio mudou na pasta "tsconfig.json"
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true
+  }
 }
 
 
