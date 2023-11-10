@@ -5,6 +5,7 @@ const prisma = new PrismaClient();
 class UserService{
     constructor(){}
 
+    // Se não me engano ele colocou outro nome ou outra função totalmente nova no lugar desse "createUser"; porém não tenho anotado.
     async createUser(user: Prisma.UserCreateInput){
         try{
             const newuser = await prisma.user.create({
