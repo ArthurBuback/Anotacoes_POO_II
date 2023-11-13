@@ -1,0 +1,51 @@
+Armazenar 1:
+
+"npx prisma studio"
+- É uma maneira de visualizar o banco de dados do prisma; checando as tabelas de banco de dados.
+
+
+Ctrl + espaço
+- "Autocomplete" do vscode que é util para ver o que precisamos preencher nas insformações do prisma.
+
+
+Coisas que o Otavio mudou na pasta "tsconfig.json"
+- Além disso ele criou uma pasta chamada "src" com o arquivo "script.ts" dentro.
+
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  }
+}
+
+
+
+
+OBJETIVO:
+- Criar um PostServices no arquivo deixado armazenado
+---------------------------------------------------------------------------------------------------------
+Armazenar 2:
+
+Ele alterou os tipos dos ids de "id" para "string"; alterando também no UserService
+---------------------------------------------------------------------------------------------------------
+Armazenar 3:
+
+Comandos para utilizar o "server.ts" (e criar o servidor(?)):
+
+npm install express
+
+npm install --save-dev @types/express
+
+npx ts-node ./src/server.ts
+(para rodar(?))
+
+
+endereço na net:
+localhost
+---------------------------------------------------------------------------------------------------------
